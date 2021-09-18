@@ -1,0 +1,153 @@
+/* Variabes */
+
+:root {
+  --accent: #146E4D;
+  --main-body: #EDEDE8;
+  --white: #FFFFFF;
+  --text-primary: #000000;
+  --text-secondary: #5B5B5B;
+  --icon-primary: #767673;
+  --button-bg-primary: #DADFD2;
+  --border-primary: #CFCFCB; 
+  --border-secondary: #4A4A4A;
+}
+
+/* Primary */
+
+html {
+  font-family: Proza Libre;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  line-height: 30px;
+  border: 1.125rem solid var(--white);
+  background: var(--main-body);
+  font-style: normal;
+  font-weight: normal;
+  padding: 4rem;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 4rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+/* Layout */
+
+header, main, article, section {
+  display: grid;
+}
+
+header {
+  height: max-content;
+}
+
+main {
+  gap: 4rem;
+  grid-auto-rows: max-content;
+}
+
+header, article, hr {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+/* Modules */
+
+.logo {
+  height: 18px;
+  width: auto;
+}
+
+img.--primary-img {
+  width: 100%;
+  max-width: 644px;
+  height: auto;
+}
+/* Typography */
+
+h1 {
+  font-family: Cormorant Garamond;
+  font-size: 3.5rem;
+  line-height: 4.3125rem;
+  color: var(--text-primary);
+}
+
+.lead-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: Proza Libre;
+  src: url(./assets/type/proza-libre_regular.ttf);
+}
+
+@font-face {
+  font-family: Proza Libre;
+  src: url(./assets/type/proza-libre_semi-bold.ttf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: Cormorant Garamond;
+  src: url(./assets/type/cormorant-garamond_regular.ttf);
+}
+
+/* Buttons */
+
+button {
+  display: grid;
+  place-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  min-width: 10.625rem;
+}
+
+/* Anchors */
+
+a {
+  color: var(--accent);
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* Horizontal Ruler */
+
+hr {
+  height: 1px; 
+  background: var(--border-primary);
+  width: 100%;
+  border: none;
+}
+
+/* Media Queries */
+
+/* Break-point: Tablet */
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 24px;
+  }
+}
