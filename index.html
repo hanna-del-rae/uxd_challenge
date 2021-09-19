@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My UXD Challenge</title>
+  <!-- Font-Awesome -->
   <script src="https://kit.fontawesome.com/7b769bd093.js" crossorigin="anonymous"></script>
   <!-- CSS Sanitization -->
-  <link href="https://unpkg.com/sanitize.css"rel="stylesheet"/>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,16 +17,18 @@
   <header>
     <img src="./assets/logo/market-logo.svg" alt="Market Logo" class="logo">
   </header>
+
   <main>
     <article class="listing">
       <img src="./assets/images/ikoflex.jpg" class="listing__image" alt="Ikoflex Vintage Camera sits on an apple box.">
+      <!-- Ikoflex Image -->
       <section class="listing__info">
         <h3 class="listing__subheading">1956 Germany</h3>
-        <h1 class="listing__subheading">Ikoflex Camera</h1>
+        <h1 class="listing__title">Ikoflex Camera</h1>
         <p class="listing__desc">The waist-level viewing hood opens and closes in a single action. The image from the taking lens is reflected by a mirror onto a ground glass screen. This modal has a foldable magnifying-glass under the hood, and an eye-level sportsfinder.</p>
-        <div class="listing__row listing__row--links">
+        <div class="listing__row listing__row--links" role="presentation">
           <a href="#" class="listing__link--text">
-            Learn More <i class="fas fa-arrow-right"></i>
+            Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
           <a href="#" class="listing__link--social " target="_blank" alt="Visit us on Facebook">
             <img src="./assets/social/Facebook.svg" >
@@ -34,14 +37,10 @@
             <img src="./assets/social/Twitter.svg" >
           </a>
         </div>
-        <!-- Links -->
-        <div class="listing__row listing__row--cta">
+        <div class="listing__row listing__row--cta" role="presentation">
           <p class="listing__price">$165</p>
-          <button class="listing__btn--primary">
-            Add to cart
-          </button>
+          <button class="listing__btn--primary">Add to cart</button>
         </div>
-        <!-- CTA -->
       </section>
       <!-- Ikoflex Info -->
     </article>
@@ -51,13 +50,14 @@
 
     <article class="listing">
       <img src="./assets/images/singer.jpg" class="listing__image listing__image--singer" alt="Vintage Singer 27">
+      <!-- Singer Image -->
       <section class="listing__info">
         <h3 class="listing__subheading">1920 United States</h3>
         <h1 class="listing__title">Singer 27</h1>
         <p class="listing__desc">The 27 series was singer's first use of a vibrating shuttle as a bobbin driver, instead of the transverse shuttle used in the older 'New Family' machine.</p>
-        <div class="listing__row listing__row--links">
+        <div class="listing__row listing__row--links" role="presentation">
           <a href="#" class="listing__link--text">
-            Learn More <i class="fas fa-arrow-right"></i>
+            Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
           <a href="#" class="listing__link--social" target="_blank" alt="Visit us on Facebook">
             <img src="./assets/social/Facebook.svg" >
@@ -66,14 +66,10 @@
             <img src="./assets/social/Twitter.svg" >
           </a>
         </div>
-        <!-- Links -->
-        <div class="listing__row listing__row--cta">
+        <div class="listing__row listing__row--cta" role="presentation">
           <p class="listing__price">$250</p>
-          <button class="listing__btn--primary">
-            Add to cart
-          </button>
+          <button class="listing__btn--primary">Add to cart</button>
         </div>
-        <!-- CTA -->
       </section>
       <!-- Singer Info -->
     </article>
