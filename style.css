@@ -145,6 +145,14 @@ article {
   gap: 1.5rem;
 }
 
+/* Utilities */
+
+.grid_container {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+
 /*** Children/Modules ***/
 
 .main-header__logo {
@@ -179,30 +187,29 @@ article {
   text-transform: uppercase;
 }
 
-.listing__row { /* NOTE: On a larger project I would opt to make this a .grid_container utility-class as these properties are commonly reused. */
-  display: grid;
-  gap: 1rem;
-  align-items: center;
-}
-
 .listing__row--links {
-  grid-template-columns: 1fr max-content max-content;
   padding-bottom: 1.5rem;
   border-bottom: 1px dashed var(--border-secondary);
 }
 
-.listing__link--text i {
+.listing__learn-more i {
   margin-left: 0.5rem;
 }
 
-.listing__link--social {
+.listing__social-links {
+  gap: 1.25rem;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+}
+
+.listing__social-link {
   min-height: 2rem;
   min-width: 2rem;
   display: grid;
   place-items: center;
 }
 
-.listing__link--social:hover .icon {
+.listing__social-link:hover .icon {
   fill: var(--text-secondary)
 }
 
@@ -253,6 +260,10 @@ article {
   h1 {
     font-size: 3.5rem;
     line-height: 4.3125rem;
+  }
+
+  .listing__row--links {
+    grid-template-columns: 1fr max-content;
   }
 }
 
