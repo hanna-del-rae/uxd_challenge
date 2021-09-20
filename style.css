@@ -145,14 +145,6 @@ article {
   gap: 1.5rem;
 }
 
-/* Utilities */
-
-.grid_container {
-  display: grid;
-  gap: 1rem;
-  align-items: center;
-}
-
 /*** Children/Modules ***/
 
 .main-header__logo {
@@ -187,12 +179,18 @@ article {
   text-transform: uppercase;
 }
 
+.listing__row {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+
 .listing__row--links {
   padding-bottom: 1.5rem;
   border-bottom: 1px dashed var(--border-secondary);
 }
 
-.listing__learn-more i {
+.listing__link--more i {
   margin-left: 0.5rem;
 }
 
@@ -202,14 +200,14 @@ article {
   grid-auto-columns: max-content;
 }
 
-.listing__social-link {
+.listing__link--social {
   min-height: 2rem;
   min-width: 2rem;
   display: grid;
   place-items: center;
 }
 
-.listing__social-link:hover .icon {
+.listing__link--social:hover .icon {
   fill: var(--text-secondary)
 }
 
