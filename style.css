@@ -45,10 +45,6 @@ body {
   background-repeat: no-repeat;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 /* Typography */
 
 @font-face {
